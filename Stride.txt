@@ -1,0 +1,46 @@
+Spoofing Attacks
+
+1) Attacker finds weakness in our password reset procedure, and changes all users' master passwords.
+
+2) Attacker build their own browser extension, and gains access to our extension's local storage.
+
+3) The DNS server which resolves our web server's IP has it's memory cache poisoned to make our domain resolve to an attacker's IP instead.
+
+4) Attacker pretends to be user, changes master password and credentials and locks user out of account.
+
+
+Tampering
+
+1) On Mozilla Firefox, all extensions run on a single process. An attacker builds an extension that overloads its space in this process, and spills code into our section of the process which causes it not to function properly.
+
+2) An attacker adds malicious code into an open source browser such as Chromium or Firefox which broadcasts extensions' activity to a foreign computer. << is this really within our purview? (i think we release) 
+
+3) Attacker signs in to his or her account on our website, and then saves the source code. Then finds a direct object reference to userID, changes it, and refreshes page to view another user's account info. <<other auth????
+
+
+Repudiation
+
+1) Our logs fail to recognize script injection, and are read in a browser environment. The log reader's machine is comprised when reading them.
+
+
+Information Disclosure
+
+1) Attacker injects SQL at our database, and receives users' master passwords and encrypted website passwords using 'OR 1=1' technique.
+
+2) Attacker can break Javascript 64 bit encoding algorithm for all passwords less than 10 characters.
+
+3) Attacker creates a malicious extension which shuts off https use, and forces browser to use http. Our extension doesn't notice, and sends plain text over the internet.
+
+Denial of Service
+
+1) Attacker has gained control of an army of routers spread across the world, and redirects their outgoing packets to our web server. As a result, regular users are unable to sign in.
+
+2) Attacker emails our employee a corrupted Office document which loads malware into our network. It spreads until reaching the database server where it encrypts everything. We receive a ransom notice the next day.
+
+3) Attacker discovers our forgotten procedure doesn't require any proof of work from the client. By spamming this endpoint, our system sends an email for every request which proves to jam up everything.
+
+Elevation of Privilege
+
+1) Attacker posts comment on our website's message board containing a script to scan our users' local storage and send the results. Thus exposing their saved websites and passwords.
+
+2) Attacker posts comment containing script to redirect a user to malicious webpage where they are prompted to reset their master password.

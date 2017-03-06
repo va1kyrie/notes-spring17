@@ -1,0 +1,36 @@
+notes networks 4.10.16
+
+chapter 8: network security - guest lecturer
+-principles of network security
+-security in practice
+  - toolkits we can use
+    - applications, etc
+*what is network security?*
+-confidentiality - only sender and intended receiver should be able to read
+-authentication - sender/receiver want to confirm identities
+-message integrity - msg has not been modified
+-access and availability - services remain usable/available to customers
+
+attacks:
+- eavesdropping - intercept messages
+- insertion - put msgs into stream/connection
+- impersonation - fake source address
+- hijacking - take over ongoing connection
+- DOS
+^these are active attacks
+
+encrypt messages
+  - confidentiality
+
+breaking encryption scheme
+  - ciphertext only
+  - known plaintext
+    - probable-word
+
+public-key encryption
+- signing docs
+- encrypting messages
+modular arithmetic -_-
+RSA is secure cos math
+
+authenticity - digital signatures using public-key encryption

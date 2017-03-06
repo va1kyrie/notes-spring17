@@ -1,0 +1,32 @@
+notes for IoT 4 Oct
+
+same question, 2 methods
+
+risk: it is the nature of the risk not the user that determined privacy???
+
+benefit/risk > 1 --> explicitly chooses benefit
+risk??
+not usable??
+
+protect from unauthorized webcam access???
+  - definitely assume risk???
+  - webcam covers practical??? --> no
+usability and acceptability argument
+attitudes towards tech itself
+
+people think the govt is helping
+  ...hah
+
+simple
+perceived as effective
+socially acceptable
+
+chronic-catastrophic
+assumed/accepted risk
+newness
+severity
+virtual risks (like computer viruses)
+
+demographics does play role??????
+risk and gender
+risk and age
